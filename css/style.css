@@ -3,8 +3,8 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Rubik', sans-serif;
+    font-family: 'Font Awesome 5 free', 'Montserrat';
 }
 html,body{
     height: 100%;
@@ -72,21 +72,224 @@ html,body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 70px;
 }
 .content{
-    padding: 100px 0 0 0 ;
+    padding: 35px 0 0 0 ;
 }
-.content_text{
+.content{
     font-size: 18px;
     line-height: 25px;
-}
-.content_text p{
-    margin: 0 0 20px 0;
 }
 .header_burger{
     display: none;
 }
+.section1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.content1{
+    text-align: center;
+    width: 75%;
+}
+.content1 p{
+    margin: 40px 0 40px 0;
+}
+.content1 h1{
+    margin: 40px 0 40px 0;
+}
+.content1 button{
+    height: 40px;
+    width: 130px;
+    border-radius: 3px;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.content1 button:hover{
+    background-color: rgb(60, 60, 60);
+}
+.section2{
+    height: auto;
+    width: 100%;
+}
+.content2{
+    padding-bottom: 150px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.box-item{
+    height: auto;
+    flex-basis: 33%;
+    text-align: center;
+}
+.box-item p{
+    font-size: 16px;
+    margin-top: 15px;
+}
+.box-item i{
+    font-size:80px;
+    margin-bottom: 15px;
+}
+.section3{
+    height: 70vh;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+}
+.content3{
+    height: auto;
+    min-width: 0;
+    padding-bottom: 150px;
+}
+.section3 img{
+    height: 300px;
+    width: 100%;
+}
+.section4{
+    height: auto;
+    padding: 50px 0;
+    width: 100%;
+}
+.content4{
+    height: 100%;
+    width: 100%;
+}
+.content4 p{
+    font-weight: 300;
+}
+.form-inputs{
+    height: auto;
+    width: 100%;;
+    display: flex;
+    justify-content: space-between;
+}
+.form-input{
+    width: 33%;
+    height: 100%;
+}
+
+.form-input input{
+    width: 100%;
+    height: 40px;
+    border: 2px solid #000;
+    outline: none;
+    padding-left: 5px;
+}
+.form-comment{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+}
+.form-comment textarea{
+    min-width: 100%;
+    max-width: 100%;
+    height: 250px;
+    border: 2px solid #000;
+    outline: none;
+    padding: 5px 0 0 5px;
+}
+.form-button{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.form-button button{
+    height: 100%;
+    width: 220px;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.form-button button:hover{
+    background-color: rgb(60, 60, 60);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:970px){
+    .img-item{
+        flex-basis: 50%;
+        margin-top: 30px;
+    }
+    .img-item i{
+        font-size: 80px;
+    }
+    .box-item{
+        flex-basis: 100%;
+        margin: 30px 0;
+        
+    }
+    .content2{
+        padding-bottom: 90px;
+    }
+    .form-inputs{
+        display: block;
+    }
+    .form-input{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .form-button button{
+        width: 100%;
+    }
+    
+}
+
 @media (max-width:767px){
     body.lock{
         overflow: hidden;
@@ -158,6 +361,7 @@ html,body{
     .header_menu.active{
         top: 0;
         transition: all 0.4s ease 0s;
+        padding: 300px 0 0 0;
     }
     .header_list{
         display: flex;
@@ -174,7 +378,81 @@ html,body{
         font-size: 24px;
         color: #000;
     }
+    .img-item{
+        display: none;
+    }
+    .content2{
+        padding-bottom: 90px;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slick-list{
+    overflow: hidden;
+    height: 300px;
+}
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots li{
+    list-style: none;
+    margin: 0 10px;
+}
+.slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button{
+    background-color: rgba(27, 27, 27, 0.592);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ::-webkit-scrollbar{
     width: 5px;
 }
@@ -250,4 +528,4 @@ html,body{
 
 .preloader_content {
     animation: spin 5s infinite linear;
-} /*https://codepen.io/Mattykins/pen/JjeyrB*/
+}
